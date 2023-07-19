@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .thank-you {
+            font-size: 48px;
+            font-weight: bold;
+            opacity: 0; /* Initially hidden */
+            animation: fade-in 2s ease-in-out forwards, rainbow-color 4s infinite; /* Multiple animations */
+        }
+
+        @keyframes fade-in {
+            0% { opacity: 0; } /* Start with opacity 0 */
+            100% { opacity: 1; } /* End with opacity 1 */
+        }
+
+        @keyframes rainbow-color {
+            0% { color: red; } /* Start with red color */
+            14.28% { color: orange; } /* Transition to orange at 1/7 of the animation duration (14.28%) */
+            28.56% { color: yellow; } /* Transition to yellow at 2/7 of the animation duration (28.56%) */
+            42.84% { color: green; } /* Transition to green at 3/7 of the animation duration (42.84%) */
+            57.12% { color: blue; } /* Transition to blue at 4/7 of the animation duration (57.12%) */
+            71.4% { color: indigo; } /* Transition to indigo at 5/7 of the animation duration (71.4%) */
+            85.68% { color: violet; } /* Transition to violet at 6/7 of the animation duration (85.68%) */
+            100% { color: red; } /* Return to red at the end of the animation */
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you">Thanks For Your Details!</div>
+</body>
+</html>
