@@ -20,7 +20,7 @@ def load_data():
 # Route for displaying a simple form (GET method)
 @app.route('/', methods=['GET'])
 def show_form():
-    return render_template('form.html')
+    return render_template('index.html')
 
 # Route for processing the form data (POST method)
 @app.route('/submit', methods=['POST'])
